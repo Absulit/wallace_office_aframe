@@ -1,0 +1,106 @@
+<!--https://cdn.rawgit.com/resonance-audio/resonance-audio-web-sdk/master/examples/treasure-hunt.html-->
+
+<html>
+  <head>
+    <title>Wallace Office - A-Frame</title>
+
+    <meta property="og:title" content="Wallace Office - A-Frame" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Blade Runner 2049 demo" />
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Wallace Office - A-Frame">
+    <meta name="twitter:description" content="Blade Runner 2049 demo">
+    <meta name="twitter:image" content="">
+
+
+    <link rel="icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <meta name="description" content="Blade Runner 2049 demo">
+
+<!--    <link rel="stylesheet" type="text/css" href="style.css">-->
+
+
+    <script src="js/resonance-audio.min.js"></script>
+
+    <script src="js/aframe.0.7.0.min.js"></script>
+    <script src="js/aframe-extras.min.js"></script>
+    <script src="js/aframe-teleport-controls.min.js"></script>
+
+    <script src="js/ambisonic_audio_component.js"></script>
+
+  </head>
+  <body>
+
+<!--    <a-scene fog="type: linear; color: #BE792D; near:15; far:50;">-->
+    <a-scene fog="type: exponential; color: #BE792D; density:0.025;">
+
+
+      <a-camera id="camera" position="0 0 0">
+      </a-camera>
+
+      <a-entity light="type: directional; color: #BE792D; intensity: 0.5;"
+                position="2 20 0"></a-entity>
+<!--
+      <a-entity light="type: directional; color: #BE792D; intensity: 0.5;
+                   castShadow: true;
+                   intensity: 0.4;
+                   shadowCameraVisible: true;"
+
+                position="2 20 0"></a-entity>
+-->
+
+
+      <a-entity light="type: ambient; color: #BE792D"></a-entity>
+
+      <a-entity light="type: point; color: #BE792D" position="-16.732069 -0.004731 -0.01061"></a-entity>
+      <a-entity light="type: point; color: #BE792D" position="0.144815 -0.004731 -16.732069"></a-entity>
+      <a-entity light="type: point; color: #BE792D" position="16.732069 -0.004731 -0.010608"></a-entity>
+
+
+      <a-assets>
+        <img id="sky_sphere-texture" src="textures/sky_sphere.jpg">
+
+        <a-asset-item id="office" src="models/office.gltf" />
+        <a-asset-item id="water" src="models/water.gltf" />
+        <a-asset-item id="steps" src="models/steps.gltf" />
+        <a-asset-item id="deck" src="models/deck.gltf" />
+        <a-asset-item id="table" src="models/table.gltf" />
+        <a-asset-item id="chairs" src="models/chairs.gltf" />
+
+
+      </a-assets>
+
+      <a-sky color="#EEEEFF" material="src: #sky_sphere-texture"></a-sky>
+
+      <!-- Using the asset management system. -->
+      <a-gltf-model src="#office"></a-gltf-model>
+      <a-gltf-model src="#water"></a-gltf-model>
+      <a-gltf-model src="#steps"></a-gltf-model>
+      <a-gltf-model src="#deck"></a-gltf-model>
+      <a-gltf-model src="#table"></a-gltf-model>
+      <a-gltf-model src="#chairs"></a-gltf-model>
+
+
+
+      <a-entity teleport-controls="button: trigger; collision-entities: #office #hall_low_floor" hand-controls="left"></a-entity>
+      <a-entity teleport-controls="button: trigger; collision-entities: #office #hall_low_floor" hand-controls="right"></a-entity>
+
+
+      <a-entity ambisonic="src:audio/ambience_1.mp3; volume:1" position="0 2 0"></a-entity>
+
+      <a-entity ambisonic="src:audio/small_waterfall.ogg; volume:.05" position="0 0 10"></a-entity>
+      <a-entity ambisonic="src:audio/small_waterfall.ogg; volume:.05" position="0 0 -10"></a-entity>
+      <a-entity ambisonic="src:audio/small_waterfall.ogg; volume:.05" position="10 0 0"></a-entity>
+      <a-entity ambisonic="src:audio/small_waterfall.ogg; volume:.05" position="-10 0 10"></a-entity>
+
+    </a-scene>
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,215 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5123,
+            "count" : 2424,
+            "max" : [
+                1599
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 1600,
+            "max" : [
+                1.0000004768371582,
+                1.7999999523162842,
+                1.0000005960464478
+            ],
+            "min" : [
+                -1.0000003576278687,
+                -1.0,
+                -1.0000003576278687
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 1600,
+            "max" : [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min" : [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 1600,
+            "max" : [
+                1.0,
+                1.1444099072832614e-06,
+                1.0,
+                1.0
+            ],
+            "min" : [
+                -1.0,
+                -1.0,
+                -1.0,
+                1.0
+            ],
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 1600,
+            "max" : [
+                1.0,
+                1.0
+            ],
+            "min" : [
+                0.0,
+                0.0
+            ],
+            "type" : "VEC2"
+        }
+    ],
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter",
+        "version" : "2.0"
+    },
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 4848,
+            "byteOffset" : 0,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 19200,
+            "byteOffset" : 4848,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 19200,
+            "byteOffset" : 24048,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 25600,
+            "byteOffset" : 43248,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12800,
+            "byteOffset" : 68848,
+            "target" : 34962
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 81648,
+            "uri" : "office.bin"
+        }
+    ],
+    "images" : [
+        {
+            "uri" : "JPEG/Material_Roughness.jpg"
+        },
+        {
+            "uri" : "JPEG/Material_Normal.jpg"
+        },
+        {
+            "uri" : "JPEG/Material_Metallic.jpg"
+        },
+        {
+            "uri" : "JPEG/office_diffuse.jpg"
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "Material",
+            "normalTexture" : {
+                "index" : 1
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 3
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 0
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 2,
+                        "POSITION" : 1,
+                        "TANGENT" : 3,
+                        "TEXCOORD_0" : 4
+                    },
+                    "indices" : 0,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Office",
+            "scale" : [
+                19.580251693725586,
+                19.580251693725586,
+                19.580251693725586
+            ],
+            "translation" : [
+                1.2332005500793457,
+                9.832741737365723,
+                -0.03520990535616875
+            ]
+        }
+    ],
+    "samplers" : [
+        {}
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 3
+        }
+    ]
+}
