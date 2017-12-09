@@ -6,22 +6,22 @@
 
     <meta property="og:title" content="Wallace Office - A-Frame" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://absulit.github.io/wallace_office_aframe/" />
+    <meta property="og:image" content="https://absulit.github.io/wallace_office_aframe/ss/ss3.jpg" />
     <meta property="og:description" content="Blade Runner 2049 demo" />
 
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="twitter:title" content="Wallace Office - A-Frame">
     <meta name="twitter:description" content="Blade Runner 2049 demo">
-    <meta name="twitter:image" content="">
+    <meta name="twitter:image" content="https://absulit.github.io/wallace_office_aframe/ss/ss3.jpg">
 
 
     <link rel="icon" href="favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <meta name="description" content="Blade Runner 2049 demo">
 
-<!--    <link rel="stylesheet" type="text/css" href="style.css">-->
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 
     <script src="js/resonance-audio.min.js"></script>
@@ -34,6 +34,26 @@
 
   </head>
   <body>
+
+    <div id="container" class="container">
+      <div class="info">
+        <span class="title">Wallace Office</span>
+        <span class="company"><a href="https://twitter.com/absulit" target="_blank">@absulit</a></span>
+        -
+        <span class="company"><a href="https://github.com/Absulit/wallace_office_aframe" target="_blank">GitHub</a></span>
+        -
+
+<!--        <a href="//www.absulit.com" target="_blank">absulit.com</a>-->
+
+        <div class="instructions">
+          <div><strong>VR</strong>: Hand controllers and teleport with trigger.</div>
+          <div><strong>Desktop</strong>: Keyboard (WASD/arrows) and mouse.</div>
+          <div><strong>Mobile</strong>: 360.</div>
+        </div>
+      </div>
+    </div>
+
+
 
 <!--    <a-scene fog="type: linear; color: #BE792D; near:15; far:50;">-->
     <a-scene fog="type: exponential; color: #BE792D; density:0.025;">
@@ -99,6 +119,15 @@
 
     </a-scene>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110935274-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-110935274-1');
+    </script>
 
 
   </body>

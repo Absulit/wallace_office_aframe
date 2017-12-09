@@ -36,7 +36,7 @@ Textures were created with Substance Painter but later tweaked with Blender to b
 Created an ambisonic_audio_component to handle the resonance-audio library in a A-Frame perspective, so a simple entity as follows works to add audio into a position in space:
 
 ```
-<a-entity ambisonic="src:audio/ambience_1.mp3; volume:1" position="0 2 0"></a-entity>
+<a-entity ambisonic="src:audio/ambience_1.ogg; volume:1" position="0 2 0"></a-entity>
 ```
 
 Synth audio design created by me with only a couple of notes as ambience.
