@@ -31,7 +31,7 @@
     <script src="js/aframe-teleport-controls.min.js"></script>
 
     <script src="js/ambisonic_audio_component.js"></script>
-
+    <script src="js/ocean-plane.js"></script>
   </head>
   <body>
 
@@ -83,13 +83,13 @@
 
       <a-assets>
         <img id="sky_sphere-texture" src="textures/sky_sphere.jpg">
-
-        <a-asset-item id="office" src="models/office.gltf" />
-        <a-asset-item id="water" src="models/water.gltf" />
-        <a-asset-item id="steps" src="models/steps.gltf" />
-        <a-asset-item id="deck" src="models/deck.gltf" />
-        <a-asset-item id="table" src="models/table.gltf" />
-        <a-asset-item id="chairs" src="models/chairs.gltf" />
+        <img id="water-normal" src="models/JPEG/water_normal.jpg" />
+        <a-asset-item id="office" src="models/office.glb" />
+        <a-asset-item id="water" src="models/water.glb" />
+        <a-asset-item id="steps" src="models/steps.glb" />
+        <a-asset-item id="deck" src="models/deck.glb" />
+        <a-asset-item id="table" src="models/table.glb" />
+        <a-asset-item id="chairs" src="models/chairs.glb" />
 
 
       </a-assets>
@@ -98,14 +98,14 @@
 
       <!-- Using the asset management system. -->
       <a-gltf-model src="#office"></a-gltf-model>
-      <a-gltf-model src="#water"></a-gltf-model>
+     <!--   <a-gltf-model src="#water"></a-gltf-model> -->
       <a-gltf-model src="#steps"></a-gltf-model>
       <a-gltf-model src="#deck"></a-gltf-model>
       <a-gltf-model src="#table"></a-gltf-model>
       <a-gltf-model src="#chairs"></a-gltf-model>
 
 
-
+      <a-ocean-plane material="normalMap: #water-normal; sphericalEnvMap: #cgsky;" position="0 -1 0"></a-ocean-plane>
       <a-entity teleport-controls="button: trigger; collision-entities: #office #hall_low_floor" hand-controls="left"></a-entity>
       <a-entity teleport-controls="button: trigger; collision-entities: #office #hall_low_floor" hand-controls="right"></a-entity>
 
